@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2022108090 신규현 - 사이트 설명</title>
+  <style>
+    /* reset */
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 14px;
+      font: inherit;
+      box-sizing: border-box;
+      transition: all 0.5s;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+    ul li {
+      list-style: none;
+      float: left;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    label,
+    button,
+    i {
+      cursor: pointer;
+    }
+
+    body,
+    body > div {
+      width: 100%;
+      float: left;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    /* style */
+    .flex { display: flex; flex-wrap: wrap; }
+    .justify-between { justify-content: space-between; }
+    .items-center { align-items: center; }
+
+    .wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    #container {
+      width: 100%;
+      position: relative;
+      background-color: #dedede
+    }
+
+    header {
+      position: sticky;
+      left: 0;
+      top: 0;
+      background: rgba(223, 255, 183, 0.7);
+      width: 100%;
+      height: 75px;
+      z-index: 800;
+      line-height: 75px;
+    }
+    header > .wrap > .page-title {
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+    header > .wrap > .page-title:hover a {
+      color: rgb(27, 194, 18);
+    }
+    header > .wrap nav li {
+      margin-left: 30px;
+    }
+    header > .wrap nav li:hover a {
+      color: rgb(27, 194, 18);
+    }
+    header .nav_on > a {
+      font-weight: bold;
+      color: rgb(27, 194, 18);
+    }
+
+    #section2 {
+      width: 100%;
+      padding: 30px;
+    }
+
+    #section2 .sub-title {
+      font-weight: bold;
+      font-size: 1.4em;
+      margin-bottom: 16px;
+    }
+
+    .code-box {
+      white-space: pre;
+      border: 1px solid #2e2e2e;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    footer {
+      width: 100%;
+      background: #2e2e2e;
+    }
+    footer > .copyright {
+      width: 100%;
+      color: #e2e2e2;
+      font-size: 12px;
+      text-align: center;
+      padding-block: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div class="wrap flex justify-between">
+        <p class="page-title"><a href="./index.html">2022108090 신규현</a></p>
+        <div class="flex justify-between items-center">
+          <audio controls>
+            <source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.mp3">
+          </audio>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li class="nav_on"><a href="./how-to-make.html">사이트 설명</a></li>
+              <li><a href="./about-me.html">만든 사람</a></li>
+              <li><a href="./source.html">파일 출처</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div id="section2">
+      <div&#12297; class="wrap">
+        <p class="sub-title">
+          사이트 설명
+        </p>
+        <p>
+          우선 디자인적 구성입니다.<br>
+          디자인은 간단하게 헤더, 콘텐츠, 푸터로 구성되어 있습니다.<br>
+          <br>
+          헤더는 콘텐츠에서 스크롤이 발생하더라도 항상 확인하고 클릭할 수 있게 position 스타일을 sticky로 주어 항상 위에 붙어 있을 수 있게 하였습니다.<br>
+          또한 제가 좋아하는 초록색을 콘셉트로 잡고 시작했습니다.<br>
+          <br>
+          콘텐츠는 각 메뉴별로 보여주어야 할 콘텐츠를 표출하는 곳입니다.<br>
+          Home 메뉴의 영상 리스트들은 한눈에 보기 쉽게 카드 형식으로 제작하였습니다.<br>
+          또한 클릭 시 모달이 뜨며 영상을 볼 수 있게 하였습니다.<br>
+          <br>
+          푸터는 간단하게 copyright를 추가해보았습니다.<br>
+          <br>
+          더 이쁘게 해보고 싶었지만 디자인에는 재능이 없어 최대한 열심히 스타일을 넣어 보았습니다.<br>
+          <br>
+          그리고 코드의 구성입니다.<br>
+          header 태그에 css style을 넣고 body 태그의 맨 밑에 줄에 js 코드를 작성하였습니다.<br>
+          <br>
+          js 또한 head 태그에 적어도 되지만 body 태그 맨 밑줄에 적은 이유는<br>
+          vue를 사용하던 버릇 탓에 template script style 순으로 코드를 작성하는 것이 손에 익었기 때문인 것 같습니다.<br>
+          <br>
+          window.onload를 사용해서 위에 적는 것이 좋을까 생각했었지만 익숙한 것을 고르기로 했습니다.<br>
+          <br>
+          Home 메뉴의 영상 박스들은<br>
+        </p>
+        <div class="code-box">
+          function createMovieBox(obj) {
+            let txt = '';
+    
+            txt += `&#12296;div class="movie-box" data-video="${obj.source}" data-thumb="${obj.thumb}" onclick="showModal(this)"&#12297;`;
+              txt += `&#12296;div class="movie-box__thumb"&#12297;`
+                txt += `&#12296;img src="${baseURL}${obj.thumb}" alt=""&#12297;`
+              txt += `&#12296;div`
+              txt += `&#12296;div class="movie-box__text"&#12297;`
+                txt += `&#12296;p class="movie-box__title"&#12297;${obj.title}&#12296;/p&#12297;`
+                txt += `&#12296;p class="movie-box__desc"&#12297;${obj.description}&#12296;/p&#12297;`
+                txt += `&#12296;p class="movie-box__subtitle-by"&#12297;${obj.subtitle}&#12296;/p&#12297;`
+              txt += `&#12296;/div&#12297;`
+            txt += `&#12296;/div&#12297;`;
+    
+            return txt;
+          }
+        </div>
+        <p>
+          이런 식으로 박스를 생성하는 함수를 만든 뒤<br>
+          미리 준비해둔 데이터 배열을 map 함수로 반복하여 html에 innerHTML로 삽입하였습니다.<br>
+          <br>
+          모달은 코드를 최대한 짧고 간단하게 만들고 싶었기 때문에 하나의 모달로 여러 영상을 볼 수 있게 하였습니다.<br>
+          우선 카드를 만들 때 dataset 속성을 사용하여 영상 url을 담아두었다가 카드가 클릭 되었을 때 모달안의 HTMLVideoElement을 바꿔가며 사용했습니다. <br>
+          <br>
+          이상입니다.<br>
+          감사합니다.<br>
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p class="copyright">Copyright 2022. 신규현. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
